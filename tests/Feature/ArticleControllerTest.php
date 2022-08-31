@@ -57,7 +57,7 @@ class ArticleControllerTest extends TestCase
 
         $this->assertTrue($result);
     }
-    
+
     public function testIsLikedByAnother()
     {
         $article = factory(Article::class)->create();
@@ -69,5 +69,4 @@ class ArticleControllerTest extends TestCase
 
         $this->assertFalse($result);
     }
-
 }
