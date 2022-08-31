@@ -12,7 +12,6 @@ class ArticleControllerTest extends TestCase
 {
     use RefreshDatabase;
     
-    
     public function testIndex()
     {
         $response = $this->get(route('articles.index'));
@@ -70,5 +69,4 @@ class ArticleControllerTest extends TestCase
 
         $this->assertFalse($result);
     }
-    
 }
